@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class task(models.Model):
+    index = models.IntegerField()
+    task = models.CharField(max_length=300)
