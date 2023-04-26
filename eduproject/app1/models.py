@@ -1,5 +1,6 @@
 from django.db import models
 
 class task(models.Model):
-    index = models.IntegerField()
-    task = models.CharField(max_length=300)
+    id = models.IntegerField(primary_key=int)
+    name = models.CharField(max_length=20)
+    task_text = models.CharField(max_length=300)
