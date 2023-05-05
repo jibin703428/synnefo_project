@@ -18,10 +18,10 @@ from django.urls import path
 from app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name='home'),
+    path('',views.base, name='base'),
 
 
     
     path('delete/<int:task_id>',views.delete, name='del'),
-
+    path('edit/<int:task_id>',views.edit, name='edit'),
 ]
